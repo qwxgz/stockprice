@@ -1,0 +1,6 @@
+streamlit
+matplotlib
+scikit-learn
+prophet==1.1.4
+yfinance==0.2.26
+pandas==1.5.3

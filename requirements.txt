@@ -1,4 +1,5 @@
 streamlit
+plotly
 matplotlib
 scikit-learn
 prophet==1.1.4

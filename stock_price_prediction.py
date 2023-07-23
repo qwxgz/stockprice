@@ -7,17 +7,18 @@ from prophet.plot import plot_plotly
 
 from plotly import graph_objs as go
 
-START = "2019-1-1"
+START = "2018-1-1"
 TODAY = date.today().strftime("%Y-%m-%d")
 
 st.title("基于Yahoo金融数据的股票价格预测 Stock Price Prediction")
 st.write("本项目仅用作测试功能! This Web App is for Testing Only! - qwx")
 
-stocks = ("AAPL", "GOOG", "TSLA", "NVDA")
+stocks = ("AAPL", "GOOG", "MSFT","TSLA", "NVDA")
+st.write("Yahoo股票代码 根据项目需求加载股票数据 - qwx")
 
 selected_stocks = st.selectbox("选择示例股票代码 Select for prediction", stocks)
 
-n_years = st.slider("预测年份 Years of prediction:", 1, 5)
+n_years = st.slider("预测年份 Years of prediction:", 1, 4)
 period = n_years * 365
 
 
